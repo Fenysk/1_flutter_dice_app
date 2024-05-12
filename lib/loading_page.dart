@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/styled_text.dart';
 
 const startAlignment = Alignment.bottomLeft;
 const endAlignment = Alignment.topRight;
@@ -23,8 +22,11 @@ class LoadingPage extends StatelessWidget {
           ],
         ),
       ),
-      child: const Center(
-        child: StyledText('Weather'),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dé-1.png',
+          width: 200,
+        ),
       ),
     );
   }

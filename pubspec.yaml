@@ -17,4 +17,11 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 flutter:
+  assets:
+    - assets/images/dé-1.png
+    - assets/images/dé-2.png
+    - assets/images/dé-3.png
+    - assets/images/dé-4.png
+    - assets/images/dé-5.png
+    - assets/images/dé-6.png
   uses-material-design: true
