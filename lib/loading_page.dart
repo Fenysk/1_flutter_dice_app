@@ -21,7 +21,7 @@ class LoadingPage extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: StyledText(),
+        child: StyledText('Weather'),
       ),
     );
   }
