@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first_app/dice_roller.dart';
 
 const startAlignment = Alignment.bottomLeft;
 const endAlignment = Alignment.topRight;
@@ -8,11 +9,6 @@ class LoadingPage extends StatelessWidget {
 
   final Color startColor;
   final Color endColor;
-
-  void rollDice() {
-    // ignore: avoid_print
-    print('Le dé est lancé !');
-  }
 
   @override
   Widget build(context) {
@@ -27,26 +23,8 @@ class LoadingPage extends StatelessWidget {
           ],
         ),
       ),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset(
-              'assets/images/dé-1.png',
-              width: 200,
-            ),
-            const SizedBox(height: 20),
-            TextButton(
-              onPressed: rollDice,
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.yellow,
-                foregroundColor: Colors.black,
-                textStyle: const TextStyle(fontSize: 28),
-              ),
-              child: const Text('Lancer le dé'),
-            )
-          ],
-        ),
+      child: const Center(
+        child: DiceRoller(),
       ),
     );
   }
