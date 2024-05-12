@@ -6,7 +6,10 @@ void main() {
     const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.red,
-        body: LoadingPage(),
+        body: LoadingPage(
+          Color.fromARGB(255, 27, 23, 255),
+          Color.fromARGB(255, 0, 153, 255),
+        ),
       ),
     ),
   );
